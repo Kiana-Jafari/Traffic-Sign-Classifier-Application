@@ -33,7 +33,7 @@ for idx, name in enumerate(class_names):
 ######################################### MODEL DEPLOYMENT #########################################
 
 # Load the model
-model = load_model('classifier.h5')
+model = load_model('https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Model%20Deployment/classifier.h5')
 
 # Function for preprocessing the images
 def preprocess(img):
