@@ -6,6 +6,6 @@ matplotlib==3.9.2
 seaborn==0.13.2
 tensorflow==2.16.1
 scikit-learn==1.5.2
-opencv-python==4.10.0.84
+opencv-python==4.10.0
 pillow==10.4.0
 streamlit==1.39.0
