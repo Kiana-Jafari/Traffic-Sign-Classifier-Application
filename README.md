@@ -18,13 +18,13 @@ We're going to use The **German Traffic Sign Recognition Benchmark (GTSRB)**. It
 
 Traffic sign examples in the GTSRB dataset were extracted from 1-second video sequences. They have varying light conditions and rich backgrounds. A sample of images is shown below:
 
-<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/sample.png' width='350' height='350'></img>
+<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/sample.png' width='400' height='400'></img>
 
 **4. Distribution & Data Augmentation**
 
 The first histogram shows the distribution of classes (see figure). It clearly indicates that we have *class imbalance*. For this reason, **Image Augmentation** technique is applied to the images.
 
-<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/hist.png' width='300' height='290'>Class Distribution</img>
+<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/hist.png' width='400' height='200'></img>
 
 Other Data Preprocessing techniques used in this project:
 - Converting RGB images to Grayscale
