@@ -17,4 +17,21 @@ We're going to use The **German Traffic Sign Recognition Benchmark (GTSRB)**. It
 **3. A sample of images**
 Traffic sign examples in the GTSRB dataset were extracted from 1-second video sequences. They have varying light conditions and rich backgrounds. A sample of images is shown below:
 
-<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/sample.png' width='300' height='300'></img>
+<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/sample.png' width='350' height='350'></img>
+
+**4. Distribution & Data Augmentation**
+
+The first histogram shows the distribution of classes (see figure). It clearly indicates that we have *class imbalance*. For this reason, **Image Augmentation** technique is applied to the images.
+
+<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/hist.png' width='300' height='290'>Class Distribution</img>
+
+Other Data Preprocessing techniques used in this project:
+- Converting RGB images to Grayscale
+- Histogram Equalization
+- Normalization
+
+**5. Model Architecture**
+
+The model architecture was first introduced by Pierre Sermanet and Yann LeCun. We will build a modified version of that architecture from scratch. It accepts an input image of shape 32x32, feeds it to the convolution layers each with 108 (5x5) filters, followed by ReLU Nonlinearity, and then Max-Pooling layers to reduce the dimensions. This pattern would repeat two times. Finally, the output of the convolution layers would be fed into two fully connected (FC) layers. The final model will have 579k (GS) / 584k (RGB) parameters. (i.e. if we train the model on grayscale images, vs. RGB images). To learn more about the architecture, please refer to the papers in the <a href=''>*Reference*</a> section. The architecture is shown below: 
+
+<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/lenet.png' width='200' height='200'></img>
