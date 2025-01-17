@@ -9,7 +9,7 @@ Welcome to this project! Traffic Sign Detection is an important concept in enhan
 **2. Dataset**
 
 You can find the datasets in the `Data` folder. Since the files are too big, they've been split into smaller chunks of sub-files. Please note that you can also *Clone* the repository containing the dataset into the colab. This will allow access to the dataset inside the colab environment:
-<pre> ``` !git clone https://bitbucket.org/jadslim/german-traffic-signs ``` </pre>
+<pre> ```!git clone https://bitbucket.org/jadslim/german-traffic-signs``` </pre>
 
 **3. A sample of images**
 You can see a 
