@@ -39,6 +39,20 @@ The model architecture was first introduced by Pierre Sermanet and Yann LeCun. W
 
 **6. Accuracy & Loss Curve**
 
-As a final accuracy, the model achieved `95.75%` on the training data, and `97.07%` on the validation data. Also, the accuracy on the test set was about `94.64%`. The Accuracy-loss graph is shown below: 
+As a final accuracy, the model achieved `95.75%` on the training data, and `97.07%` on the validation data. The Accuracy-loss graph indicates that the model is learning well from the training data and is not overfitting. The test set with an accuracy of about `94.64%` suggests that the model is performing well on new data, although there might be still room for improvement.
 
 <img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/performance.png' width='500' height='350'></img>
+
+**7. Visualizing Predictions**
+
+The model performance was evaluated by making predictions on the test set. A sample of predictions is shown below. Also, the total number of wrong predictions was `677` out of `12630` images. (approx. an error rate of 0.0536). Please refer to the <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/preds.png'>predictions</a> section to see the full predcitions.
+
+<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/pred_sample.png' width='360' height='360'></img>
+
+**8. Confusion Matrix**
+
+A (normalized) confusion matrix was plotted to define the model performance on the test data. The main evaluation metric used to describe the network performance was **Recall**, which measures how often an algorithm correctly identifies positive instances (true positives) from all the actual positive samples in the dataset.
+
+<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/cm.png' width='500' height='500'></img>
+
+**9. Model Performance**
