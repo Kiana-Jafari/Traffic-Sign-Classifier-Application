@@ -49,13 +49,30 @@ The model performance was evaluated by making predictions on the test set. A sam
 
 <img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/pred_sample.png' width='360' height='360'></img>
 
-**8. Confusion Matrix**
+**8. Model Performance**
 
 A (normalized) confusion matrix was plotted to define the model performance on the test data. The main evaluation metric used to describe the network performance was **Recall**, which measures how often an algorithm correctly identifies positive instances (true positives) from all the actual positive samples in the dataset.
 
 <img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/cm.png' width='800' height='600'></img>
 
-**9. Model Performance**
+Further improvements:
+- Add more `Dropout` layers
+- Generate more samples for classes with low accuracy (such as "Pedestrian")
+- Try to train the model on the traditional machine learning algorithms
 
+**9. Run the model on Streamlit (Application)**
+
+The model was tested on Streamlit. You can experiment with images from the <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/tree/main/Test%20Images'>Test Images</a> folder. Please note that some test images were downloaded from the internet to further test the model's capabilities, and are not representative of test data. Therefore, they can't be used for data-driven decision-making. 
+
+To run the application on your local, use the following commands. Please note that you need to install Python dependencies, which can be found in <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/requirements.txt'>this text</a> file.
+
+<pre>streamlit run app.py</pre>
+
+<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/test.png' width='800' height='600'></img>
+
+Feel free to test the model and fine-tune the hyperparameters for better results!
 
 <h4 id='reference'>10. References</h4>
+
+- <a href='https://ieeexplore.ieee.org/document/6033589'>Traffic sign recognition with multi-scale Convolutional Networks</a>
+- <a href='https://odr.chalmers.se/server/api/core/bitstreams/fdef1142-92cb-4f8c-9c8a-f17f72260c00/content'>Traffic sign classification with deep convolutional neural networks</a>.
