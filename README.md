@@ -10,11 +10,11 @@ ________________________________________________________________________________
 
 **2. Dataset**
 
-We're going to use The **German Traffic Sign Recognition Benchmark (GTSRB)**, which contains 43 classes of traffic signs, split into 39,209 training images and 12,630 test images. You can find the datasets in the `Data` folder. Since the files are too big, they've been split into smaller chunks of sub-files. Please note that you can also *Clone* the repository containing the dataset into the google colab. This will allow access to the dataset inside the colab environment:
+We're going to use The **German Traffic Sign Recognition Benchmark (GTSRB)**. It contains 43 classes of traffic signs and is split into 39,209 training images and 12,630 test images. You can find the datasets in the `Data` folder. Since the sets are too big, they've been split into smaller chunks of sub-files. Please note that you can also *Clone* the repository containing the dataset into the google colab. This will allow access to the dataset inside the colab environment:
 
 <pre>!git clone https://bitbucket.org/jadslim/german-traffic-signs</pre>
 
 **3. A sample of images**
-Traffic sign examples in the GTSRB dataset were extracted from 1-second video sequences. They also have varying light conditions and rich backgrounds. A sample of images is shown below:
+Traffic sign examples in the GTSRB dataset were extracted from 1-second video sequences. They have varying light conditions and rich backgrounds. A sample of images is shown below:
 
 <img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/sample.png' width='300' height='300'></img>
