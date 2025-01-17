@@ -58,4 +58,4 @@ A (normalized) confusion matrix was plotted to define the model performance on t
 **9. Model Performance**
 
 
-<bold id='reference'>10. References</bold>
+<h4 id='reference'>10. References</h4>
