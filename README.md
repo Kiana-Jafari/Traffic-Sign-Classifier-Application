@@ -15,6 +15,7 @@ We're going to use The **German Traffic Sign Recognition Benchmark (GTSRB)**. It
 <pre>!git clone https://bitbucket.org/jadslim/german-traffic-signs</pre>
 
 **3. A sample of images**
+
 Traffic sign examples in the GTSRB dataset were extracted from 1-second video sequences. They have varying light conditions and rich backgrounds. A sample of images is shown below:
 
 <img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/sample.png' width='350' height='350'></img>
