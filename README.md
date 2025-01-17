@@ -10,7 +10,7 @@ ________________________________________________________________________________
 
 **2. Dataset**
 
-We're going to use The **German Traffic Sign Recognition Benchmark (GTSRB)**. It contains 43 classes of traffic signs and is split into 39,209 training images and 12,630 test images. You can find the datasets in the <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/tree/main/Data'>`Data`</a> folder. Since the sets are too big, they've been split into smaller chunks of sub-files. Please note that you can also *Clone* the repository containing the dataset into the google colab. This will allow access to the dataset inside the colab environment:
+We're going to use The **German Traffic Sign Recognition Benchmark (GTSRB)**. It contains 43 classes of traffic signs and is split into 39,209 training images and 12,630 test images. You can find the datasets in the <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/tree/main/Data'>Data</a> folder. Since the sets are too big, they've been split into smaller chunks of sub-files. Please note that you can also *Clone* the repository containing the dataset into the google colab. This will allow access to the dataset inside the colab environment:
 
 <pre>!git clone https://bitbucket.org/jadslim/german-traffic-signs</pre>
 
@@ -24,7 +24,7 @@ Traffic sign examples in the GTSRB dataset were extracted from 1-second video se
 
 The first histogram shows the distribution of classes (see figure). It clearly indicates that we have *class imbalance*. For this reason, **Image Augmentation** technique is applied to the images.
 
-<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/hist.png' width='400' height='220'></img>
+<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/hist.png' width='400' height='230'></img>
 
 Other Data Preprocessing techniques used in this project:
 - Converting RGB images to Grayscale
