@@ -69,11 +69,11 @@ To test the application on your local, run the following commands on your Termin
 <pre>pip install streamlit</pre>
 <pre>streamlit run app.py</pre>
 
-<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/test.png' width='800' height='400'></img>
+<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/test.png' width='800' height='300'></img>
 
 Feel free to test the model and fine-tune the hyperparameters for better results!
 
-<h4 id='reference'>10. References</h4>
+<h3 id='reference'>10. References</h3>
 
 Check the two articles below to find out more information:
 
