@@ -78,4 +78,4 @@ Feel free to test the model and fine-tune the hyperparameters for better results
 Check the two articles below to find out more information:
 
 - <a href='https://ieeexplore.ieee.org/document/6033589'>Traffic sign recognition with multi-scale Convolutional Networks</a>
-- <a href='https://odr.chalmers.se/server/api/core/bitstreams/fdef1142-92cb-4f8c-9c8a-f17f72260c00/content'>Traffic sign classification with deep convolutional neural networks</a>.
+- <a href='https://odr.chalmers.se/server/api/core/bitstreams/fdef1142-92cb-4f8c-9c8a-f17f72260c00/content'>Traffic sign classification with deep convolutional neural networks</a>
