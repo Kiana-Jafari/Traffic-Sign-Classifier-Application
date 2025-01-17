@@ -41,4 +41,4 @@ The model architecture was first introduced by Pierre Sermanet and Yann LeCun. W
 
 As a final accuracy, the model achieved `95.75%` on the training data, and `97.07%` on the validation data. Also, the accuracy on the test set was about `94.64%`. The Accuracy-loss graph is shown below: 
 
-<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/performance.png' width='500' height='350'></img>
+<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/performance.png' width='500' height='330'></img>
