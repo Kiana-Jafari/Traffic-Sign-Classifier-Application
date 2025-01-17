@@ -35,4 +35,4 @@ Other Data Preprocessing techniques used in this project:
 
 The model architecture was first introduced by Pierre Sermanet and Yann LeCun. We will build a modified version of that architecture from scratch. It accepts an input image of shape 32x32, feeds it to the convolution layers each with 108 (5x5) filters, followed by ReLU Nonlinearity, and then Max-Pooling layers to reduce the dimensions. This pattern would repeat two times. Finally, the output of the convolution layers would be fed into two fully connected (FC) layers. The final model will have 579k (GS) / 584k (RGB) parameters. (i.e. if we train the model on grayscale images, vs. RGB images). To learn more about the architecture, please refer to the papers in the <a href=''>*Reference*</a> section. The architecture is shown below: 
 
-<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/lenet.png' width='350' height='180'></img>
+<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/lenet.png' width='350' height='150'></img>
