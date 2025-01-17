@@ -53,6 +53,6 @@ The model performance was evaluated by making predictions on the test set. A sam
 
 A (normalized) confusion matrix was plotted to define the model performance on the test data. The main evaluation metric used to describe the network performance was **Recall**, which measures how often an algorithm correctly identifies positive instances (true positives) from all the actual positive samples in the dataset.
 
-<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/cm.png' width='700' height='600'></img>
+<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/cm.png' width='800' height='500'></img>
 
 **9. Model Performance**
