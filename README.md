@@ -64,11 +64,12 @@ Further improvements:
 
 The model was tested on Streamlit. You can experiment with images from the <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/tree/main/Test%20Images'>Test Images</a> folder. Please note that some images were downloaded from the internet to further test the model's capabilities, and are not representative of the original test data. Therefore, they can't be used for data-driven decision-making. 
 
-To run the application on your local, use the following commands. Please note that you need to install Python dependencies, which can be found in <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/requirements.txt'>this text</a> file.
+To test the application on your local, run the following commands on your Terminal. Please note that you need to install Python dependencies, which can be found in <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/requirements.txt'>this text</a> file.
 
+<pre>pip install streamlit</pre>
 <pre>streamlit run app.py</pre>
 
-<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/test.png' width='800' height='600'></img>
+<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/test.png' width='800' height='400'></img>
 
 Feel free to test the model and fine-tune the hyperparameters for better results!
 
