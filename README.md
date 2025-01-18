@@ -1,6 +1,6 @@
 ### Traffic Sign Classifier Application</br>
 
-<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/Safe-System.png' width='320' height='320' align=left></img>
+<img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/Safe-System.png' width='250' height='250' align=left></img>
 
 **1. Introduction**
 
