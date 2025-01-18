@@ -10,7 +10,7 @@ ________________________________________________________________________________
 
 **2. Dataset**
 
-We're going to train our model on the **German Traffic Sign Recognition Benchmark (GTSRB)** dataset. It contains 43 classes of traffic signs and is split into 39,209 training images and 12,630 test images. There are mainly 3 options to load the data. You can either find the datasets in the <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/tree/main/Data'>Data</a> folder, or in the main <a href='https://benchmark.ini.rub.de/gtsrb_dataset.html'>website</a>. Since the sets are too big, they've been split into smaller chunks of sub-files. Please note that you can also *Clone* the repository containing the dataset into the google colab. This will allow access to the dataset inside the colab environment:
+We're going to train our model on the **German Traffic Sign Recognition Benchmark (GTSRB)** dataset. It contains 43 classes of traffic signs and is split into 39,209 training images and 12,630 test images. There are mainly 3 options to load the data. You can either find the datasets in the <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/tree/main/Data'>Data</a> folder or on the main <a href='https://benchmark.ini.rub.de/gtsrb_dataset.html'>website</a>. Since the sets are too big, they've been split into smaller chunks of sub-files. Please note that you can also *Clone* the repository containing the dataset into the google colab. This will allow access to the dataset inside the colab environment:
 
 <pre>!git clone https://bitbucket.org/jadslim/german-traffic-signs</pre>
 
