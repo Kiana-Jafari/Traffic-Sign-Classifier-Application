@@ -10,7 +10,7 @@ ________________________________________________________________________________
 
 **2. Dataset**
 
-We're going to use The **German Traffic Sign Recognition Benchmark (GTSRB)**. It contains 43 classes of traffic signs and is split into 39,209 training images and 12,630 test images. You can find the datasets in the <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/tree/main/Data'>Data</a> folder. Since the sets are too big, they've been split into smaller chunks of sub-files. Please note that you can also *Clone* the repository containing the dataset into the google colab. This will allow access to the dataset inside the colab environment:
+We're going to train our model on the **German Traffic Sign Recognition Benchmark (GTSRB)** dataset. It contains 43 classes of traffic signs and is split into 39,209 training images and 12,630 test images. There are mainly 3 options to load the data. You can either find the datasets in the <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/tree/main/Data'>Data</a> folder, or in the main <a href='https://benchmark.ini.rub.de/gtsrb_dataset.html'>website</a>. Since the sets are too big, they've been split into smaller chunks of sub-files. Please note that you can also *Clone* the repository containing the dataset into the google colab. This will allow access to the dataset inside the colab environment:
 
 <pre>!git clone https://bitbucket.org/jadslim/german-traffic-signs</pre>
 
@@ -22,18 +22,18 @@ Traffic sign examples in the GTSRB dataset were extracted from 1-second video se
 
 **4. Distribution & Data Augmentation**
 
-The first histogram shows the distribution of classes (see figure). It clearly indicates that we have *class imbalance*. For this reason, **Image Augmentation** technique is applied to the images.
+The first histogram shows the distribution of classes (see figure). It clearly indicates that we have *class imbalance*. For this reason, **Image Augmentation** technique is applied to the images. The goal is to generate more training data from existing training samples by augmenting the samples via several random transformations that yield believable-looking images.
 
 <img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/hist.png' width='400' height='250'></img>
 
 Other Data Preprocessing techniques used in this project:
-- Converting RGB images to Grayscale
-- Histogram Equalization
-- Normalization
+- Converting RGB images to Grayscale: Requires fewer computational resources and memory compared to color images.
+- Histogram Equalization: Uses the image's histogram to determine a transform and adjust contrast.
+- Normalization: Scales the pixel values to fall within the range (0, 1).
 
 **5. Model Architecture**
 
-The model architecture was first introduced by Pierre Sermanet and Yann LeCun. We will build a modified version of that architecture from scratch. It accepts an input image of shape 32x32, feeds it to the convolution layers each with 108 (5x5) filters, followed by ReLU Nonlinearity, and then Max-Pooling layers to reduce the dimensions. This pattern would repeat two times. Finally, the output of the convolution layers would be fed into two fully connected (FC) layers. The final model will have 579k (GS) / 584k (RGB) parameters. (i.e. if we train the model on grayscale images, vs. RGB images). To learn more about the architecture, please refer to the papers in the <a href='#reference'>*Reference*</a> section. The architecture is shown below: 
+We will build a modified version of the architecture introduced by Pierre Sermanet and Yann LeCun from scratch. It accepts input images that are 32x32 pixels in size, feeds them to the convolutional layers each with 108 (5x5) filters, followed by ReLU Nonlinearity, and then Max-Pooling layers to reduce the dimensions. This pattern would repeat two times. Finally, the output of the convolution layers would be fed into two fully connected (FC) layers each with 100 neurons. The final model will have 579k (GS) / 584k (RGB) parameters. (i.e. if we train the model on grayscale images, vs. RGB images). To learn more about the architecture, please refer to the papers in the <a href='#reference'>*Reference*</a> section. The architecture is shown below: 
 
 <img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/lenet.png' width='350' height='150'></img>
 
@@ -57,16 +57,17 @@ A (normalized) confusion matrix was plotted to define the model performance on t
 
 Further improvements:
 - Add more `Dropout` layers
-- Generate more samples for classes with low accuracy (such as "Pedestrian")
-- Try to train the model on the traditional machine learning algorithms
+- Utilize 3x3 filters to generalize better
+- Generate more samples for classes with low accuracy (such as the "Pedestrian" class)
+- Try to train the model on the traditional machine learning algorithms (such as SVM)
 
 **9. Run the model on Streamlit (Application)**
 
-The model was tested on Streamlit. You can experiment with images from the <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/tree/main/Test%20Images'>Test Images</a> folder. Please note that some images were downloaded from the internet to further test the model's capabilities, and are not representative of the original test data. Therefore, they can't be used for data-driven decision-making. 
+The model was tested on the Streamlit application. You can either use the model saved in `train.py`, or the `.ipynb` notebook and experiment its performance with images from the <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/tree/main/Test%20Images'>Test Images</a> folder. Please note that some images were downloaded from the internet to further test the model's capabilities, and are not representative of the original test data. Therefore, they can't be used for data-driven decision-making. 
 
-To test the application on your local, run the following commands on your Terminal. Please note that you need to install Python dependencies, which can be found in <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/requirements.txt'>this text</a> file.
+To test the application on your local, run the following commands on your Terminal. Please note that you need to first install Python dependencies, which can be found in <a href='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/requirements.txt'>this text</a> file.
 
-<pre>pip install streamlit</pre>
+<pre>pip install streamlit & other dependencies</pre>
 <pre>streamlit run app.py</pre>
 
 <img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/test.png' width='800' height='350'></img>
