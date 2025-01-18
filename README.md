@@ -29,7 +29,7 @@ The first histogram shows the distribution of classes (see figure). It clearly i
 Other Data Preprocessing techniques used in this project:
 - Converting RGB images to Grayscale: Requires fewer computational resources and memory compared to color images.
 - Histogram Equalization: Uses the image's histogram to determine a transform and adjust contrast.
-- Normalization: Scales the pixel values to fall within the range (0, 1).
+- Normalization: Scales the pixel values to fall within the range [0, 1].
 
 **5. Model Architecture**
 
