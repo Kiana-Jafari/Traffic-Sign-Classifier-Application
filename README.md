@@ -22,11 +22,11 @@ Traffic sign examples in the GTSRB dataset were extracted from 1-second video se
 
 **4. Distribution & Data Augmentation**
 
-The first histogram shows the distribution of classes (see figure). It clearly indicates that we have *class imbalance*. For this reason, **Image Augmentation** technique is applied to the images. The goal is to generate more training data from existing training samples by augmenting the samples via several random transformations that yield believable-looking images.
+This histogram shows the distribution of classes (see figure). It clearly indicates that we have *class imbalance*. For this reason, **Image Augmentation** technique is applied to the images. The goal is to generate more training data from existing training samples by augmenting the samples via several random transformations that yield believable-looking images.
 
 <img src='https://github.com/Kiana-Jafari/Traffic-Sign-Classifier-Application/blob/main/Analysis/hist.png' width='400' height='250'></img>
 
-Other Data Preprocessing techniques used in this project:
+Other Data Preprocessing techniques used in this project include:
 - Converting RGB images to Grayscale: Requires fewer computational resources and memory compared to color images.
 - Histogram Equalization: Uses the image's histogram to determine a transform and adjust contrast.
 - Normalization: Scales the pixel values to fall within the range [0, 1].
